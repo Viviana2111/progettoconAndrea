@@ -1,0 +1,12 @@
+﻿@model List<professori>
+<h1> professori </h1>
+
+@foreach (var p in Model)
+{
+    <h2>@p.nome, @p.cognome </h2>
+    <a asp-action="Details" asp-route-id="@p.id">dettagli</a>
+
+}
+
+
+

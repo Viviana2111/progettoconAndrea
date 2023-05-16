@@ -1,0 +1,11 @@
+﻿@model Utenti
+<form method="post"> @*// perchè il form è in post *@
+
+    <input type="text" asp-for="@Model.Nome" placeholder="nome" />
+    <input type="text" asp-for="@Model.Cognome" placeholder="cognome" />
+    <input type="date" asp-for="@Model.DataNascita" placeholder="datanascita" />
+    <input type="number" asp-for="@Model.Eta" placeholder="eta" />
+    <button type="submit">Clicca qui</button>
+
+
+</form>

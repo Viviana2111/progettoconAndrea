@@ -1,0 +1,16 @@
+﻿@model List<Utenti>
+<h1> 
+    utenti 
+</h1>
+
+@foreach(var i /* riga */ in Model)
+{
+    <h1>@i.Nome, @i.Cognome</h1>
+    <a asp-action="Details" asp-route-id="@i.Id"> Dettagli </a>
+    <a asp-action="Delete" asp-route-id="@i.Id" > Cancella </a>
+}
+
+
+
+
+            
